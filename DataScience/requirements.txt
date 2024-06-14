@@ -255,7 +255,7 @@ wordcloud==1.9.3
 wsproto==1.2.0
 wurlitzer==3.0.3
 xxhash==3.4.1
-xz==5.4.6
+#xz==5.4.6
 yaml==0.2.5
 ydata-profiling==4.7.0
 yellowbrick==1.5
