@@ -138,8 +138,8 @@ overrides==7.7.0
 packaging==24.0
 pandas==2.1.4
 #pandas-profiling==3.2.0
-pandoc==3.1.12.3
-pandocfilters==1.5.1
+#pandoc==3.1.12.3
+#pandocfilters==1.5.1
 parso==0.8.3
 patsy==0.5.6
 pexpect==4.9.0
