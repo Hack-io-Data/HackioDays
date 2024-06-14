@@ -16,7 +16,7 @@ st.set_page_config(layout="wide")
 
 
 dir_name = os.path.abspath(os.path.dirname(__file__))
-print(dir_name)
+st.write(dir_name)
 
 st.markdown("<h1 style='text-align: center;color: #49F2D3;'>⌗ Hackio Data Science Challenge ⌗</h1>", unsafe_allow_html=True)
 
