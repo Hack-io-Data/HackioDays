@@ -103,9 +103,9 @@ kiwisolver==1.4.5
 #libcxx==16.0.6
 #libffi==3.4.4
 #libiconv==1.17
-libsodium==1.0.18
-libxml2==2.10.4
-libxslt==1.1.37
+#libsodium==1.0.18
+#libxml2==2.10.4
+#libxslt==1.1.37
 lightgbm==4.3.0
 llvmlite==0.41.1
 lxml==5.1.0
