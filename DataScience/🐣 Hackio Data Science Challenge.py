@@ -19,8 +19,9 @@ dir_name = os.path.abspath(os.path.dirname(__file__))
 
 # join the bobrza1.csv to directory to get file path
 location = os.path.join(dir_name, 'Customers.csv')
-st.write(location)
-st.markdown("<h1 style='text-align: center;color: #49F2D3;'>⌗ Hackio Data Science Challenge ⌗</h1>", unsafe_allow_html=True)
+
+
+st.markdown("<h1 style='text-align: center; color: #F2C349; font-size: 100px;'>⌗ Hackio Data Science Challenge ⌗</h1>", unsafe_allow_html=True)
 
 # insertamos una imagen 
 #st.image("Imagenes/logo_celeste@4x.png")
