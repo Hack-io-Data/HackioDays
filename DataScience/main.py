@@ -2,7 +2,7 @@
 # Librerías numéricas
 # -----------------------------------------------------------------------
 import pandas as pd  
-import pandas_profiling
+#import pandas_profiling
 from pydantic.v1 import BaseSettings
 
 
@@ -12,7 +12,7 @@ pd.pandas.set_option('display.max_columns', None)
 # Librerías de streamlit
 # -----------------------------------------------------------------------
 import streamlit as st
-from streamlit_pandas_profiling import st_profile_report
+#from streamlit_pandas_profiling import st_profile_report
 
 # configurar el diseño de la página para que el contenido se ajuste al ancho del navegador
 st.set_page_config(layout="wide")
@@ -34,5 +34,5 @@ if fichero is not None:
     # mostramos dos filas aleatorias del dataframe
     st.table(df.sample(2))
 
-    pr = df.profile_report()
-    st_profile_report(pr)
+    #pr = df.profile_report()
+    #st_profile_report(pr)
