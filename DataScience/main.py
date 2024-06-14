@@ -10,9 +10,13 @@ pd.pandas.set_option('display.max_columns', None)
 # -----------------------------------------------------------------------
 import streamlit as st
 
+import os
 # configurar el diseño de la página para que el contenido se ajuste al ancho del navegador
 st.set_page_config(layout="wide")
 
+
+dir_name = os.path.abspath(os.path.dirname(__file__))
+print(dir_name)
 
 st.markdown("<h1 style='text-align: center;color: #49F2D3;'>⌗ Hackio Data Science Challenge ⌗</h1>", unsafe_allow_html=True)
 
