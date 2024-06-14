@@ -120,8 +120,8 @@ multimethod==1.11.2
 nbclassic==1.0.0
 nbclient==0.10.0
 nbconvert==7.16.3
-nbconvert-core==7.16.3
-nbconvert-pandoc==7.16.3
+#nbconvert-core==7.16.3
+#nbconvert-pandoc==7.16.3
 nbformat==5.10.3
 ncurses==6.4
 nest-asyncio==1.6.0
