@@ -100,7 +100,7 @@ jupyterlab-widgets==3.0.10
 jupyterlab_pygments==0.3.0
 kaleido==0.2.1
 kiwisolver==1.4.5
-libcxx==16.0.6
+#libcxx==16.0.6
 libffi==3.4.4
 libiconv==1.17
 libsodium==1.0.18
