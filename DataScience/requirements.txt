@@ -177,7 +177,7 @@ pyodbc==5.1.0
 pyparsing==3.1.2
 pyproj==3.6.1
 pysocks==1.7.1
-python==3.11.8
+#python==3.11.8
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
 python-fastjsonschema==2.19.1
