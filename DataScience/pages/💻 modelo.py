@@ -16,7 +16,7 @@ import streamlit as st
 st.set_page_config(layout="wide")
 
 # insertamos una imagen 
-st.image("Imagenes/logo_celeste@4x.png")
+st.image("../Imagenes/logo_celeste@4x.png")
 
 # creamos un input para que el usuario inserte el conjunto de datos que sea
 fichero = st.file_uploader("Choose a CSV file", accept_multiple_files=False)
