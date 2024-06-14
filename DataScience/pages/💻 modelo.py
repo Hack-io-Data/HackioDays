@@ -11,9 +11,12 @@ pd.pandas.set_option('display.max_columns', None)
 # -----------------------------------------------------------------------
 import streamlit as st
 
-
 # configurar el diseño de la página para que el contenido se ajuste al ancho del navegador
 st.set_page_config(layout="wide")
+
+st.markdown("<h1 style='text-align: center; color: #F2C349; font-size: 100px;'>⌗ Hackio Data Science Challenge ⌗</h1>", unsafe_allow_html=True)
+
+
 
 # insertamos una imagen 
 #st.image("../Imagenes/logo_celeste@4x.png")
@@ -40,5 +43,4 @@ if fichero is not None:
     kmean_results = assign_model(kmeans)
 
     st.table(kmean_results.head(1))
-    text_contents = '''This is some text'''
-    st.download_button("Download some text", kmean_results.to_csv(index = False))
+    st.download_button("Descarga el conjunto de datos con los clusters", kmean_results.to_csv(index = False))
