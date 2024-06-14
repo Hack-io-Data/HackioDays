@@ -23,7 +23,7 @@ st.markdown("<h1 style='text-align: center; color: #F2C349; font-size: 100px;'>â
 
 
 
-dir_name = os.path.abspath(os.path.dirname("DataScience"))
+dir_name = os.path.abspath(os.path.dirname(__file__))
 
 # join the bobrza1.csv to directory to get file path
 location = os.path.join(dir_name, 'Customers.csv')
