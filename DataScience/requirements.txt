@@ -101,7 +101,7 @@ jupyterlab_pygments==0.3.0
 kaleido==0.2.1
 kiwisolver==1.4.5
 #libcxx==16.0.6
-libffi==3.4.4
+#libffi==3.4.4
 libiconv==1.17
 libsodium==1.0.18
 libxml2==2.10.4
