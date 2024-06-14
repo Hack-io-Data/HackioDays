@@ -27,7 +27,7 @@ dir_name = os.path.abspath(os.path.dirname("DataScience"))
 
 # join the bobrza1.csv to directory to get file path
 location = os.path.join(dir_name, 'Customers.csv')
-
+st.write(location)
 df = pd.read_csv(location)
 st.table(df.head())
 
