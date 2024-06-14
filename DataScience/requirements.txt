@@ -256,8 +256,8 @@ wsproto==1.2.0
 wurlitzer==3.0.3
 xxhash==3.4.1
 #xz==5.4.6
-yaml==0.2.5
-ydata-profiling==4.7.0
+#yaml==0.2.5
+#ydata-profiling==4.7.0
 yellowbrick==1.5
 zeromq==4.3.5
 zipp==3.17.0
