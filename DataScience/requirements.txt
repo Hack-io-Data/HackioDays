@@ -17,7 +17,7 @@ bleach==6.1.0
 blinker==1.7.0
 boto==2.49.0
 #bzip2==1.0.8
-ca-certificates==2024.3.11
+#ca-certificates==2024.3.11
 cached-property==1.5.2
 cached_property==1.5.2
 cachetools==5.3.3
