@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------
 import pandas as pd  
 #import pandas_profiling
-from pydantic.v1 import BaseSettings
+#from pydantic.v1 import BaseSettings
 
 
 pd.pandas.set_option('display.max_columns', None)
