@@ -16,8 +16,10 @@ st.set_page_config(layout="wide")
 
 
 dir_name = os.path.abspath(os.path.dirname(__file__))
-st.write(dir_name)
 
+# join the bobrza1.csv to directory to get file path
+location = os.path.join(dir_name, 'Customers.csv')
+st.write(location)
 st.markdown("<h1 style='text-align: center;color: #49F2D3;'>⌗ Hackio Data Science Challenge ⌗</h1>", unsafe_allow_html=True)
 
 # insertamos una imagen 
@@ -26,7 +28,7 @@ st.markdown("<h1 style='text-align: left;color: #49F2D3;'> Datos</h1>", unsafe_a
 st.write("El conjunto de datos captura varias métricas relacionadas con la interacción del cliente con la compañía de seguros. Esto incluye el valor del tiempo de vida del cliente, que mide cuánto valor aporta el cliente a la empresa durante su relación, y la respuesta a ofertas de marketing. También se registra el número de reclamaciones presentadas y el monto total de estas reclamaciones, así como el número de quejas abiertas, lo cual puede ser un indicador de la satisfacción del cliente." )
 st.write("Además de los detalles personales y de la póliza, el conjunto de datos proporciona información sobre los vehículos asegurados. Esto incluye la clase del vehículo (como sedán de cuatro puertas, SUV, etc.) y el tamaño del vehículo. Estos datos son útiles para analizar cómo diferentes tipos de vehículos pueden influir en la elección del seguro y en el comportamiento del cliente.")
 # abrimos el csv con el que vamos a trabajar
-df = pd.read_csv("Datos/Customers.csv")
+df = pd.read_csv(location)
 st.table(df.head())
 
 
