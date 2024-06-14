@@ -22,7 +22,7 @@ st.set_page_config(layout="wide")
 st.markdown("<h1 style='text-align: center; color: #F2C349; font-size: 100px;'>⌗ Hackio Data Science Challenge ⌗</h1>", unsafe_allow_html=True)
 
 
-
+st.write(os.listdir())
 dir_name = os.path.abspath(os.path.dirname(__file__))
 
 # join the bobrza1.csv to directory to get file path
