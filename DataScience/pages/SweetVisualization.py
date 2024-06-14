@@ -21,8 +21,6 @@ st.set_page_config(layout="wide")
 
 st.markdown("<h1 style='text-align: center; color: #F2C349; font-size: 100px;'>⌗ Hackio Data Science Challenge ⌗</h1>", unsafe_allow_html=True)
 
-
-st.write(os.listdir())
 dir_name = os.path.abspath(os.path.dirname(__file__))
 
 # join the bobrza1.csv to directory to get file path
@@ -33,7 +31,8 @@ st.table(df.head())
 
 st.markdown("<h1 style='text-align: left;color: #49F2D3;'> Exploración de los Datos</h1>", unsafe_allow_html=True)
 
-my_report = sv.analyze(df)
+my_report = sv.analyze(df, feat_cfg=sv.FeatureConfig(
+        force_text=[]), target_feat=None)
 my_report.show_html() # Default arguments will generate to "SWEETVIZ_REPORT.html"
 
 html_file = "output.html"
