@@ -23,3 +23,51 @@
    - **Análisis:** Comparar el valor de vida del cliente y el monto total de reclamos a través de diferentes canales de venta (agente, centro de llamadas, etc.).
    - **Visualización:** Crear gráficos de barras y líneas para comparar el rendimiento de cada canal de venta.
 
+
+
+# el problema que tienen que resolver
+
+Segmentación Basada en el Comportamiento de Reclamaciones
+
+**Problema:**
+Agrupar a los clientes en base a su historial de reclamaciones para identificar patrones de riesgo y mejorar la gestión de reclamaciones.
+
+---
+
+**Proceso:**
+
+1. **Datos a Usar:**
+   - **Total Claim Amount** (Monto Total Reclamado)
+   - **Months Since Last Claim** (Meses Desde la Última Reclamación)
+   - **Number of Open Complaints** (Número de Quejas Abiertas)
+   - **Coverage** (Cobertura: Básica, Extendida, Premium)
+
+2. **Preparación de Datos:**
+   - Normalizar variables para hacerlas comparables.
+   - Manejar valores atípicos que pueden afectar los resultados.
+
+3. **Aplicación de Clustering:**
+   - **Clustering Aglomerativo**: Agrupa clientes similares progresivamente.
+   - **Clustering Divisivo**: Divide un gran grupo en subgrupos homogéneos.
+
+4. **Implementación:**
+   - Usar librerías de Python (`scipy.cluster.hierarchy`, `sklearn.cluster.AgglomerativeClustering`) para crear modelos de clustering y visualizar con dendrogramas.
+
+
+
+5. **Interpretación de Clústeres:**
+   - **Clúster 1**: Alta frecuencia de reclamaciones y cobertura básica.
+   - **Clúster 2**: Pocas reclamaciones y cobertura extendida o premium.
+   - **Clúster 3**: Historial limpio de reclamaciones.
+
+---
+
+**Beneficios:**
+
+- **Mejora la Evaluación de Riesgos**:
+  - Ajuste de tarifas basadas en patrones de reclamaciones.
+- **Identificación de Reclamaciones Fraudulentas**:
+  - Segmentos con comportamientos anómalos.
+- **Optimización de Políticas**:
+  - Políticas ajustadas según el riesgo y comportamiento del cliente.
+
