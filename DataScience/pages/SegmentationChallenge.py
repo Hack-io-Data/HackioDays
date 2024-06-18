@@ -59,9 +59,11 @@ fichero = st.file_uploader("Sube el archivo csv", accept_multiple_files=False)
 if fichero is not None:
     # convertimos el csv que inserta el usuario a daaframe
     df = pd.read_csv(fichero)
+    st.markdown("<h1 style='text-align: left;color: #49F2D3;'> Vuestros datos para el Cluster</h1>", unsafe_allow_html=True)
+    st.markdown("> #### Muestra de datos")
 
     # mostramos dos filas aleatorias del dataframe
-    st.table(df.sample(2))
+    st.table(df.sample(5))
 
 
     exp_clu101 = setup(df, normalize = True, 
@@ -70,5 +72,9 @@ if fichero is not None:
     kmeans = create_model('kmeans')
     kmean_results = assign_model(kmeans)
 
-    st.table(kmean_results.head(1))
+
+    st.markdown("<h1 style='text-align: left;color: #49F2D3;'> Los resultados</h1>", unsafe_allow_html=True)
+    st.markdown("> #### Muestra de resultados")
+
+    st.table(kmean_results.sample(5))
     st.download_button("Descarga el conjunto de datos con los clusters", kmean_results.to_csv(index = False))

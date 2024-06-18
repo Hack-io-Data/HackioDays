@@ -30,8 +30,13 @@ st.write("El conjunto de datos captura varias métricas relacionadas con la inte
 st.write("Además de los detalles personales y de la póliza, el conjunto de datos proporciona información sobre los vehículos asegurados. Esto incluye la clase del vehículo (como sedán de cuatro puertas, SUV, etc.) y el tamaño del vehículo. Estos datos son útiles para analizar cómo diferentes tipos de vehículos pueden influir en la elección del seguro y en el comportamiento del cliente.")
 # abrimos el csv con el que vamos a trabajar
 df = pd.read_csv(location)
+st.markdown("> #### Muestra de datos")
 st.table(df.head())
 
+st.download_button("Descarga el conjunto de datos para empezar a trabajar", df.to_csv(index = False))
+
+
+st.markdown("<h1 style='text-align: left;color: #49F2D3;'> Descripción de las columnas</h1>", unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)
 with col1: 

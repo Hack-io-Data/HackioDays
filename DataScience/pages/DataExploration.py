@@ -23,9 +23,13 @@ st.markdown("<h1 style='text-align: center; color: #F2C349; font-size: 100px;'>�
 
 dir_name = os.path.abspath(os.path.dirname(__file__))
 
+st.markdown("<h1 style='text-align: left;color: #49F2D3;'> Datos</h1>", unsafe_allow_html=True)
+st.write("El conjunto de datos captura varias métricas relacionadas con la interacción del cliente con la compañía de seguros. Esto incluye el valor del tiempo de vida del cliente, que mide cuánto valor aporta el cliente a la empresa durante su relación, y la respuesta a ofertas de marketing. También se registra el número de reclamaciones presentadas y el monto total de estas reclamaciones, así como el número de quejas abiertas, lo cual puede ser un indicador de la satisfacción del cliente." )
+st.write("Además de los detalles personales y de la póliza, el conjunto de datos proporciona información sobre los vehículos asegurados. Esto incluye la clase del vehículo (como sedán de cuatro puertas, SUV, etc.) y el tamaño del vehículo. Estos datos son útiles para analizar cómo diferentes tipos de vehículos pueden influir en la elección del seguro y en el comportamiento del cliente.")
+
 # join the bobrza1.csv to directory to get file path
 location = os.path.join(dir_name, 'Customers.csv')
-st.write(location)
+st.markdown("> #### Muestra de datos")
 df = pd.read_csv(location)
 st.table(df.head())
 
@@ -47,6 +51,6 @@ my_report.show_html(filepath=full_path, open_browser=False, layout='vertical', s
 HtmlFile = open("output.html", 'r', encoding='utf-8')
 source_code = HtmlFile.read() 
 components.html(source_code, height=1000, width=1350, scrolling=True)
-components.iframe(src='http://localhost:3001/EDA.html', width=1100, height=1200, scrolling=True)
+# components.iframe(src='http://localhost:3001/EDA.html', width=1100, height=1200, scrolling=True)
 
 
