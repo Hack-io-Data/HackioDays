@@ -33,7 +33,7 @@ df = pd.read_csv(location)
 st.markdown("> #### Muestra de datos")
 st.table(df.head())
 
-st.download_button("Descarga el conjunto de datos para empezar a trabajar", df.to_csv(index = False))
+st.download_button("Descarga el conjunto de datos para empezar a trabajar", df.to_csv(index = False), file_name='datos.csv', mime='text/csv')
 
 
 st.markdown("<h1 style='text-align: left;color: #49F2D3;'> Descripción de las columnas</h1>", unsafe_allow_html=True)
