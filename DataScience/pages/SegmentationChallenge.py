@@ -58,7 +58,7 @@ fichero = st.file_uploader("Sube el archivo csv", accept_multiple_files=False)
 # mientras que el archivo no haya sido subido por el usuario, no se ejecutará el cádigo que tenemos a continuación
 if fichero is not None:
     # convertimos el csv que inserta el usuario a daaframe
-    df = pd.read_csv(fichero)
+    df = pd.read_csv(fichero, sep = ";")
     st.markdown("<h1 style='text-align: left;color: #49F2D3;'> Vuestros datos para el Cluster</h1>", unsafe_allow_html=True)
     st.markdown("> #### Muestra de datos")
 
